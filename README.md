@@ -4,8 +4,8 @@ Just a simple script made while i'm learning python which check for reflacted va
 
 This tool can be helpful in checking for reflaction which can lead to some Reflected XSS.
 
-<h1> Usage </h1>
-<h3> python3 pyreflactor.py </h3>
+<h1> Usage :</h1>
+<h4> python3 pyreflactor.py </h4>
 
 <img src='https://github.com/rudysingh99/pyreflactor/raw/master/Screen%20Shot%202018-06-25%20at%205.23.51%20AM.png'>
 
