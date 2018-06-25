@@ -40,4 +40,4 @@ if ssl == 'fail':
     if keyword not in str(request_me_no_ssl.content):
         print('Our keyword was not reflected in the response.')
     else:
-        print('Found the keyword on ' + str(keyword_not_ssl))
+        print('Yayyy! Our keyword reflected at ' + str(keyword_not_ssl))
