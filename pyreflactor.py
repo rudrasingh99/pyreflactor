@@ -20,7 +20,7 @@ print("""
 site = input('Enter Site Name: ')
 url = 'https://' + str(site)
 url_without_ssl = 'http://'+ str(site)
-
+ssl = 'true'  
 try:
     result = requests.get(url)
     url_key = result
@@ -39,5 +39,10 @@ if ssl == 'fail':
     request_me_no_ssl = requests.get(keyword_not_ssl)
     if keyword not in str(request_me_no_ssl.content):
         print('Our keyword was not reflected in the response.')
-    else:
-        print('Yayyy! Our keyword reflected at ' + str(keyword_not_ssl))
+if ssl == 'true':
+    request_https = str(url) + '/' + str(keyword)
+    final_https_request = requests.get(request_https)
+    if keyword in str(final_https_request.content):
+        print('Yayy!! Keyword Found in the source')
+print('Script was run successfully')
+exit()
