@@ -1,4 +1,4 @@
-import requests
+import requests , sys
 
 
 print("""
@@ -15,9 +15,8 @@ print("""
 
 """)
 
+site = sys.argv[1]
 
-
-site = input('Enter Site Name: ')
 url = 'https://' + str(site)
 url_without_ssl = 'http://'+ str(site)
 ssl = 'true'  
